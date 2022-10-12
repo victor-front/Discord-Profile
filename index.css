@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #666;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+.userBodyContainer{
+	display: flex;
+	flex-direction: column;
+	background-color: #444;
+	max-width: 400px;
+	padding: 1em;
+	border-radius: 0px 0px 10px 10px;
+	margin: auto;
+}
+
+.userMainHeader{
+	display: flex;
+	max-width: 400px;
+	height: 70px;
+	border-radius: 10px 10px 0px 0px;
+	background-color: #FF943B;
+	margin: 2em auto;
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+.userMainHeader img{
+	display: flex;
+	border-radius: 50%;
+	margin-left: 1em;
+	margin-top: .5em;
+	width: 28%;
+	height: 110px;
+	border: 6px solid #444;
+}
+
+.userHeader{
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	background-color: #222;
+	padding-bottom: .8em;
+	margin-bottom: .8em;
+	border-bottom: 1px solid #555;
+}
+
+.userHeader h1{
+	font-size: 1.5em;
+}
+
+.nick{
+	color: #eee;
+}
+
+.id{
+	color: #aaa;
+}
+
+.userMainBody{
+	margin-top: 3em;
+	color: #ddd;
+	padding: 1em;
+	border-radius: 10px;
+	background-color: #222;
+}
+
+.categories{
+	font-size: .8em;
+	margin-bottom: .8em;
+	font-weight: bold;
+	color: #eee;
+}
+
+.desc, .dms{
+	margin-bottom: .8em;
+	color: #ccc;
+}
