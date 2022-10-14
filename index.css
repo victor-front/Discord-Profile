@@ -5,15 +5,22 @@
 }
 
 body{
-	background-color: #666;
+	background-color: #111;
 	font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+.userContainer{
+	display: block;
+	max-width: 400px;
+	margin: auto;
+	margin-bottom: 2em;
 }
 
 .userBodyContainer{
 	display: flex;
 	flex-direction: column;
 	background-color: #444;
-	max-width: 400px;
+	max-width: 100vw;
 	padding: 1em;
 	border-radius: 0px 0px 10px 10px;
 	margin: auto;
@@ -21,7 +28,7 @@ body{
 
 .userMainHeader{
 	display: flex;
-	max-width: 400px;
+	max-width: 100vw;
 	height: 70px;
 	border-radius: 10px 10px 0px 0px;
 	background-color: #64AFE5;
