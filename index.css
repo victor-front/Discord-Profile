@@ -24,7 +24,7 @@ body{
 	max-width: 400px;
 	height: 70px;
 	border-radius: 10px 10px 0px 0px;
-	background-color: #FF943B;
+	background-color: #64AFE5;
 	margin: 2em auto;
 	margin-bottom: 0px;
 	width: 100%;
@@ -70,8 +70,8 @@ body{
 	position: relative;
 	background-color: rgba(59, 185, 93);
 	border-radius: 50%;
-	width: 1.6em;
-	height: 1.6em;
+	width: 1.7em;
+	height: 1.7em;
 	border: 5px solid #444;
 	margin-top: 5.3em;
 	margin-left: -2.2em;
