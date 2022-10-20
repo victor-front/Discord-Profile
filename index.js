@@ -1,7 +1,7 @@
 function generate(){
 	let usersConfig = {
 		colors: ['#64AFE5', '#F07E31'],
-		pfps: ['wabboffet.png', 'blaze.jpg'],
+		pfps: ['img/wabboffet.png', 'img/blaze.jpg'],
 		names: ['Dundundont', 'Carriola'],
 		status: ['Jogando <strong>Pokemon Ruby</strong>', null],
 		tags: ['1985', '2005'],
