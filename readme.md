@@ -4,7 +4,7 @@
 <p>Claro que o mesmo não foi feito da melhor forma, mas, há muitos meios de fazer uma coisa só, não é? Caso tenha soluções melhores, podes contatar-me!</p>
 <h2>Como foi feito?</h2>
 <p>Eu criei 3 arquivos com os mesmos nomes, porém com extenções diferentes; <strong>index.html</strong>, <strong>index.css</strong> e <strong>index.js</strong>.</p>
-<p>Há tambem a pasta <strong>IMG</strong> que lá se guarda as fotos de perfil, e o resto como a marcação foi composto com divs com classes específicas.</p>
+<p>Há também a pasta <strong>IMG</strong> que lá se guarda as fotos de perfil, e o resto como a marcação foi composto com divs com classes específicas.</p>
 <h2>Quais programas foram utilizados?</h2>
 <ul>
 	<li>PaintDotNet</li>
