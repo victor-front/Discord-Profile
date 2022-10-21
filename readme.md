@@ -10,7 +10,7 @@
 	<li>PaintDotNet</li>
 	<li>Notepad++</li>
 	<li>Paletton</li>
-	<li>Git</li>
+	<li>Git e Github</li>
 </ul>
 <h2>Contato</h2>
 <a href="https://victor-4guiar.github.io/portifolio-victor/" rel="external" target="_blank">Meu Portifólio</a>
