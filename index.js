@@ -1,4 +1,10 @@
 function generate(){
+	let foo = document.createElement('footer');
+	foo.innerHTML = 
+		`
+		<p>Made by <a href="https://victor-4guiar.github.io/portifolio-victor/" rel="external" target="_blank"><strong>Victor Aguiar</strong></a></p>
+		`;
+	
 	let usersConfig = {
 		colors: ['#64AFE5', '#F07E31'],
 		pfps: ['img/wabboffet.png', 'img/blaze.jpg'],
@@ -49,4 +55,5 @@ function generate(){
 			document.getElementById(`status${c}`).remove();
 		}
 	}
+	document.body.appendChild(foo);
 }
