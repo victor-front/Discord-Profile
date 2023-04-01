@@ -1,11 +1,11 @@
-function generate(){
+function generate(){//Gerar a página dentre outras configs base
 	let foo = document.createElement('footer');
 	foo.innerHTML = 
 		`
-		<p>Made by <a href="https://victor-4guiar.github.io/portifolio-victor/" rel="external" target="_blank"><strong>Victor Aguiar</strong></a></p>
+		<p>Made by <a href="https://victor-front.github.io/portfolio-victor/" rel="external" target="_blank"><strong>Victor Front</strong></a></p>
 		`;
 	
-	let usersConfig = {
+	let usersConfig = {//Configurações do usuário
 		colors: ['#64AFE5', '#F07E31'],
 		pfps: ['img/wabboffet.png', 'img/blaze.jpg'],
 		names: ['Dundundont', 'Carriola'],
@@ -15,7 +15,7 @@ function generate(){
 		aquan: ["Dec 30, 2017", "Oct 20, 2018"]
 	}
 	
-	for(c=0;c<usersConfig.names.length;c++){
+	for(c=0;c<usersConfig.names.length;c++){//Looping para criar tantas contas de acordo com o tanto de nomes que há no vetor de nomes
 		let user = document.createElement('div');
 		user.setAttribute('id', 'userContainer');
 		user.classList.add('userContainer');
@@ -51,9 +51,9 @@ function generate(){
 		
 		document.body.appendChild(user);
 		document.getElementById(`userMainHeader${c}`).style.backgroundColor = `${usersConfig.colors[c]}`;
-		if(usersConfig.status[c] == null){
+		if(usersConfig.status[c] == null){//Se os status do usuário não estiver preenchido, será deletado
 			document.getElementById(`status${c}`).remove();
 		}
 	}
-	document.body.appendChild(foo);
+	document.body.appendChild(foo);//Apresentar ao front
 }
