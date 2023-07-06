@@ -12,5 +12,89 @@ body, html{
 }
 
 body{
-	background-color: #161616;
+	background-color: #313338;
+}
+
+.user{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: #232428;
+	color: #ddd;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	height: 100%;
+	min-height: 100px;
+	width: 360px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.user-header{
+	display: flex;
+	flex-direction: column;
+	height: 105px;
+}
+
+.user-background{
+	background-color: #228;
+	min-height: 60px;
+}
+
+.pfp-bolinha{
+	display: flex;
+	flex-direction: column;
+	transform: translateY(-40px);
+	margin-left: 20px;
+}
+
+.user-pfp{
+	width: 80px;
+	height: 80px;
+	background-color: #ddd;
+	border-radius: 50%;
+	background-image: url("sonic.jpg");
+	background-repeat: no repeat;
+	background-size: cover;
+	background-position: center;
+	outline: 5px solid #232428;
+}
+
+.user-bolinha{
+	display: block;
+	background-color: #23A55A;
+	width: 16px;
+	height: 16px;
+	outline: 5px solid #232428;
+	border-radius: 15px;
+	transform: translate(60px, -20px);
+}
+
+.user-body{
+	position: relative;
+	background-color: #111214;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 8px;
+}
+
+.user-name{
+	border-bottom: 1px solid #2E2F34;
+	margin-bottom: 15px;
+}
+
+.name-exb{
+	font-size: 1.5em;
+	margin-bottom: 2px;
+}
+
+.name-def{
+	font-size: .9em;
+	font-weight: bold;
+	margin-left: 4px;
+	margin-bottom: 10px;
+}
+
+.user-sobre h1, .user-sobre p{
+	font-size: .8em;
+	margin-bottom: 10px;
 }
