@@ -50,8 +50,8 @@ body{
 }
 
 .user-pfp{
-	width: 85px;
-	height: 85px;
+	width: 88px;
+	height: 88px;
 	background-color: #111;
 	border-radius: 50%;
 	background-image: url("sonic.jpg");
@@ -61,14 +61,34 @@ body{
 	outline: 5px solid #232428;
 }
 
-.user-bolinha{
+.user-bolinha-online{
 	display: block;
 	background-color: #23A55A;
-	width: 16px;
-	height: 16px;
+	width: 18px;
+	height: 18px;
 	outline: 5px solid #232428;
 	border-radius: 15px;
-	transform: translate(65px, -20px);
+	transform: translate(68px, -20px);
+}
+
+.user-bolinha-nao-perturbar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #F23F43;
+	width: 18px;
+	height: 18px;
+	outline: 5px solid #232428;
+	border-radius: 15px;
+	transform: translate(68px, -20px);
+}
+
+.traco{
+	height: 5px;
+	width: 13px;
+	background-color: #232428;
+	border-radius: 4px;
 }
 
 .user-body{
@@ -104,6 +124,7 @@ body{
 
 .user-sobre p{
 	color: #ccc;
+	font-size: .9em;
 }
 
 .user-desde{
@@ -151,4 +172,23 @@ body{
 
 .user-mensagem input[type="text"]{
 	outline: none;
+}
+
+footer{
+	background-color: #111214;
+	color: #ddd;
+	padding: 5px;
+	font-size: .9em;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	text-align: center;
+}
+
+footer a{
+	color: #ddd;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+footer a:hover{
+	text-decoration: underline;
 }

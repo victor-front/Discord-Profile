@@ -1,10 +1,27 @@
+const users = {
+	nomes: ['zanetick', 'kevin'],
+	nicks: ['Zanetick', 'Kevin'],
+	bol: ['naoperturbar', 'online'],
+	colorsb: ['#363377', '#006211'],
+	pfps: ['data/img/zanetick.png', 'data/img/kevin.png'],
+	descs: ['Olá, eu sou o Zanes, prazer.', 'Oie, eu sou o Kevin, eu gosto de aventuras!'], 
+	datas: ['jan. 02, 2018', 'fev. 22, 2021']
+}
+
+const bolinhaOnline = () => `
+	<span class="user-bolinha-online"></span>
+`
+
+const bolinhaNaoPerturbar = () => `
+	<span class="user-bolinha-nao-perturbar"><span class="traco"></span></span>
+`
+
 const user = (nome, nick, colorb, pfp, desc, data) => `
 	<section id="${nome}" class="user">
 		<section class="user-header">
 			<div class="user-background" style="background-color: ${colorb};"></div>
 			<div class="pfp-bolinha">
 				<div class="user-pfp" style="background-image: url(${pfp})"></div>
-				<span class="user-bolinha"></span>
 			</div>
 		</section>
 		<section class="user-body">
@@ -25,17 +42,26 @@ const user = (nome, nick, colorb, pfp, desc, data) => `
 				<input type="text" class="input-nota" placeholder="Clique aqui para adicionar uma nota">
 			</section>
 			<section class="user-mensagem">
-				<input type="text" class="input-mensagem" placeholder="Enviar mensagem a @teste001">
+				<input type="text" class="input-mensagem" placeholder="Enviar mensagem a @${nome}">
 			</section>
 		</section>
 	</section>	
 `
 
-document.body.innerHTML += user(
-	'zanes99',
-	'Zanetick',
-	'#333388',
-	'data/zanetick.png',
-	'Oi, eu sou o Zanetick e gosto de dominar o mundo, sabe? O dia a dia',
-	'dic. 09, 2021'
-)
+function load(){
+	for(c=0;c < users.nomes.length;c++){
+		document.querySelector('main').innerHTML += user(
+			`${users.nomes[c]}`,
+			`${users.nicks[c]}`,
+			`${users.colorsb[c]}`,
+			`${users.pfps[c]}`,
+			`${users.descs[c]}`,
+			`${users.datas[c]}`
+		)
+		if(users.bol[c] == 'online'){
+			document.querySelectorAll('.pfp-bolinha')[c].innerHTML += bolinhaOnline();
+		}else if(users.bol[c] == 'naoperturbar'){
+			document.querySelectorAll('.pfp-bolinha')[c].innerHTML += bolinhaNaoPerturbar();
+		}
+	}
+}load();
