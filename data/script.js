@@ -1,21 +1,31 @@
-const users = {
-	nomes: ['zanetick', 'kevin'],
-	nicks: ['Zanetick', 'Kevin'],
-	bol: ['naoperturbar', 'online'],
-	colorsb: ['#363377', '#006211'],
-	pfps: ['data/img/zanetick.png', 'data/img/kevin.png'],
-	descs: ['Olá, eu sou o Zanes, prazer.', 'Oie, eu sou o Kevin, eu gosto de aventuras!'], 
-	datas: ['jan. 02, 2018', 'fev. 22, 2021']
+const users = {//Objeto que contem informações dos usuários da página, podem ser modificados.
+	nomes: ['zanetick_12', '_kevin', 'glich22', 'sonic_gamer__'],
+	nicks: ['Zanetick', 'Kevin', 'Glitch', 'Sonic Gamer'],
+	bol: ['naoperturbar', 'online', 'ausente', 'invisivel'],
+	colorsb: ['#363377', '#006211', '#111', '#363377'],
+	pfps: ['data/img/zanetick.png', 'data/img/kevin.png', 'data/img/glitch.png', 'data/img/sonic.jpg'],
+	descs: ['Olá, eu sou o Zanes, prazer.', 'Oie, eu sou o Kevin, eu gosto de aventuras!', 'Olá.', 'Olá, sou Sonic Gamer, amo os jogos do azulão!'], 
+	datas: ['jan. 02, 2018', 'fev. 22, 2021', 'ago. 02, 2022', 'mai. 02, 2021']
 }
 
+//Abaixo os componentes de bolinhas, as que deixa claro se estás online, ausente, offline, etc.
 const bolinhaOnline = () => `
 	<span class="user-bolinha-online"></span>
 `
 
 const bolinhaNaoPerturbar = () => `
-	<span class="user-bolinha-nao-perturbar"><span class="traco"></span></span>
+	<span class="user-bolinha-nao-perturbar"><span class="aux"></span></span>
 `
 
+const bolinhaAusente = () => `
+	<span class="user-bolinha-ausente"><span class="aux"></span></span>
+`
+
+const bolinhaInvisivel = () => `
+	<span class="user-bolinha-invisivel"><span class="aux"></span></span>
+`
+
+//Componente que contém a carcaça do perfil.
 const user = (nome, nick, colorb, pfp, desc, data) => `
 	<section id="${nome}" class="user">
 		<section class="user-header">
@@ -48,7 +58,7 @@ const user = (nome, nick, colorb, pfp, desc, data) => `
 	</section>	
 `
 
-function load(){
+function load(){//função que dá load nas micro-funções da página em sí, gera um looping que só para quando gera o ultimo perfil do objeto que contem as informações dos usuários.
 	for(c=0;c < users.nomes.length;c++){
 		document.querySelector('main').innerHTML += user(
 			`${users.nomes[c]}`,
@@ -62,6 +72,10 @@ function load(){
 			document.querySelectorAll('.pfp-bolinha')[c].innerHTML += bolinhaOnline();
 		}else if(users.bol[c] == 'naoperturbar'){
 			document.querySelectorAll('.pfp-bolinha')[c].innerHTML += bolinhaNaoPerturbar();
+		}else if(users.bol[c] == 'ausente'){
+			document.querySelectorAll('.pfp-bolinha')[c].innerHTML += bolinhaAusente();
+		}else if(users.bol[c] == 'invisivel'){
+			document.querySelectorAll('.pfp-bolinha')[c].innerHTML += bolinhaInvisivel();
 		}
 	}
 }load();
