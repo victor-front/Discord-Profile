@@ -1,6 +1,6 @@
 <h1>Discord Profile</h1>
 <h2>Introdução</h2>
-<p>Discord Profile é um clone do Discord em HTML5, CSS3 e JavaScrípt, autamente compatível a telas menores, flexível e fácil de editar.</p>
+<p>Discord Profile é um clone do Discord em HTML5, CSS3 e JavaScript, autamente compatível a telas menores, flexível e fácil de editar.</p>
 <h2>Como funciona</h2>
 <p>Toda a raíz da página vai se basear no objeto users, nele podemos notar informações precisas dos usuários, separadas por vetores.</p>
 <p>Na função load(), dá load no que eu chamo de micro-funções que geram os perfis.</p>
